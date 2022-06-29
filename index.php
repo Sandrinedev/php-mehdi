@@ -21,20 +21,27 @@ array_push($tableau,'Voiture 2','Tortue');
 
 $notes = [12,5,16,7];
 // Afficher la moyenne des notes
-$nbElementNotes = count($notes);
-$sommeNotes = $notes[0] + $notes[1] + $notes[2] + $notes[3];
-$moyenneNotes = $sommeNotes / $nbElementNotes;
+// $nbElementNotes = count($notes);
+// $sommeNotes = $notes[0] + $notes[1] + $notes[2] + $notes[3];
+// $moyenneNotes = $sommeNotes / $nbElementNotes;
 
 // echo $moyenneNotes;
 
-$tab2 = array_merge($tableau,$notes);
+// $tab2 = array_merge($tableau,$notes);
 
 // debug($tab2);
 
-for($k=0 ; $k < count($notes) ; $k++) {
-    echo $notes[$k] . '<br>';
+// for($k=0 ; $k < count($notes) ; $k++) {
+//     echo $notes[$k] . '<br>';
+// }
+$sommeNotes = 0;
+for ($j=0 ; $j < count($notes) ; $j++) {
+    // $sommeNotes += $notes[$j];
+    $sommeNotes = $sommeNotes + $notes[$j];
 }
+$moyenneNotes = $sommeNotes / count($notes);
 
+echo $moyenneNotes;
 
 ?>
 </main>
