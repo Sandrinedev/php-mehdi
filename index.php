@@ -14,7 +14,7 @@ $tableau[] = 'Janvier';
 array_push($tableau,'Voiture');
 array_push($tableau,'Voiture 2','Tortue');
 
-debug($tableau);
+// debug($tableau);
 // echo $tableau[2];
 
 // echo count($tableau);
@@ -25,7 +25,16 @@ $nbElementNotes = count($notes);
 $sommeNotes = $notes[0] + $notes[1] + $notes[2] + $notes[3];
 $moyenneNotes = $sommeNotes / $nbElementNotes;
 
-echo $moyenneNotes;
+// echo $moyenneNotes;
+
+$tab2 = array_merge($tableau,$notes);
+
+// debug($tab2);
+
+for($k=0 ; $k < count($notes) ; $k++) {
+    echo $notes[$k] . '<br>';
+}
+
 
 ?>
 </main>
