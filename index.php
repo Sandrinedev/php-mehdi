@@ -61,20 +61,20 @@ include('includes/fonctions.php');
 // echo 'La couleur de la pomme est ' .$fruits['pomme'];
 // echo 'La longeur du tableau $fruits est de : ' . sizeof($fruits);
 
-$ages = [
-    'Michel' => 34,
-    'Lucie' => 12,
-    'lucie' => 52,
-    'Mouloud' => 56
-];
-debug($ages);
+// $ages = [
+//     'Michel' => 34,
+//     'Lucie' => 12,
+//     'lucie' => 52,
+//     'Mouloud' => 56
+// ];
+// debug($ages);
 // $chaine = implode('-',$ages);
 // echo $chaine;
 // $ages2 = explode('-',$chaine);
 // debug($ages2);
 
-$ages['paul'] = 33;
-$ages['lucie'] = 02;
+// $ages['paul'] = 33;
+// $ages['lucie'] = 02;
 // debug($ages);
 
 // foreach($ages as $key => $value) {
@@ -89,10 +89,24 @@ $ages['lucie'] = 02;
 // $html .= '</ul>';
 // echo $html;
 
-$var = 'toto';
+// $planetes = ['mars','terre','pluton','venus','jupiter'];
 
-// echo "$var va à l'ecole";
-echo $var . ' va à l\'ecole';
+// debug($planetes);
+// debug($ages);
+
+// asort($planetes);
+// asort($ages);
+
+// debug($planetes);
+// debug($ages);
+
+$tab = [
+    'voiture' => 'ford',
+    'nombre' => [1,2,3,4],
+    'planete' => ['mars','terre']
+];
+
+debug($tab['nombre'][0]);
 
 ?>
 </main>
