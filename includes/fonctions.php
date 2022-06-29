@@ -1,6 +1,6 @@
 <?php
 function debug($data) {
-    echo '<pre>';
+    echo '<hr><pre>';
     print_r($data);
-    echo '</pre>';
+    echo '</pre><hr>';
 }
