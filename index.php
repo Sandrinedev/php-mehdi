@@ -8,14 +8,24 @@ include('includes/fonctions.php');
 $tableau =  [];
 $tableau = [true,45,'Terre',[45,46,47]];
 
-debug($tableau);
+// debug($tableau);
 
 $tableau[] = 'Janvier';
 array_push($tableau,'Voiture');
 array_push($tableau,'Voiture 2','Tortue');
 
-// debug($tableau[2]);
-echo $tableau[2];
+debug($tableau);
+// echo $tableau[2];
+
+// echo count($tableau);
+
+$notes = [12,5,16,7];
+// Afficher la moyenne des notes
+$nbElementNotes = count($notes);
+$sommeNotes = $notes[0] + $notes[1] + $notes[2] + $notes[3];
+$moyenneNotes = $sommeNotes / $nbElementNotes;
+
+echo $moyenneNotes;
 
 ?>
 </main>
