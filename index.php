@@ -1,7 +1,7 @@
 <?php
 include('includes/header.php');
 include('includes/fonctions.php');
-include('includes/exercice.php');
+
 ?>
 <main>
 <?php
@@ -108,6 +108,59 @@ $tab = [
 ];
 
 debug($tab['nombre'][0]);
+
+<?php
+// // $peoples= [
+// //     [
+// //         'nom' => 'mohamed',
+// //         'prenom' => 'jean',
+// //         'email' => 'moje@yahoo.com'
+// //     ],
+// //     [
+// //         'nom' => 'lucie',
+// //         'prenom' => 'dupond',
+// //         'email' => 'ludu@wannado.fr'
+// //     ]
+// //     ];
+
+// //     debug($peoples);
+
+// //     // echo "le nom de lucie est" . $peoples[1]['nom'];
+// //     $json_peoples = json_encode($peoples);
+
+// //     debug($json_peoples); -->
+    
+// $json_peoples = '[{
+//     "nom" : "durand",
+//     "prenom" : "marc",
+//     "age" : 23
+//     "couleur" : ["rouge", "vert", "jaune"],
+//     "image" : "https://ximg.es/64x64/000/fff"
+// , },{
+//     "nom" : "vilko",
+//     "prenom" : "anny",
+//     "age" : 45
+//     "couleur" : ["marron", "noir", "violet"],
+//     "image" : "https://ximg.es/64x64/000/fff"
+//  }] ';
+
+
+// //  debug($json_peoples);
+// //  afficher l'image de la 2eme personne
+
+//  $peoples_array-php = json_decode($json_peoples,true);
+
+//  debug($peoples_array_php);
+
+// //  echo $peoples_array_php[1]['image'];
+// // echo '<img src="' . $peoples_array_php[1]['image'] . '"alt="anny">';
+
+?>
+<!-- <img src="<?=$peoples_array_php[1]['image']?>" alt="<?=$peoples_array_php[1]['prenom']?>"> -->
+
+$users = file_get_contents("./data/users.json");
+
+debug($users);
 
 ?>
 </main>
