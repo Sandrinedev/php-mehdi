@@ -1,6 +1,7 @@
 <?php
 include('includes/header.php');
 include('includes/fonctions.php');
+include('includes/exercice.php');
 ?>
 <main>
 <?php
